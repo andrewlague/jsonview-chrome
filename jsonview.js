@@ -118,7 +118,7 @@ if(is_json || is_jsonp){
       for ( var prop in json ) {
         hasContents = true;
         output += '<li>';
-        output += '<span class="prop">' + this.htmlEncode(prop) + '</span>: ';
+        output += '<span class="prop">"' + this.htmlEncode(prop) + '"</span>: ';
         output += this.valueToHTML(json[prop]);
         output += '</li>';
       }
